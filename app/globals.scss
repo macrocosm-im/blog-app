@@ -1,0 +1,139 @@
+@import "../styles/varilable.scss";
+
+:root {
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	max-width: 100vw;
+	min-width: 375px;
+	overflow-x: auto;
+}
+
+body {
+	color: (var(--text));
+	background: var(--background);
+	transition: background 0.4s ease, color 0.4s ease;
+	height: 100vh;
+	position: relative;
+	font-size: 16px;
+	@include tablet {
+		font-size: 15px;
+	}
+	@include mobile {
+		font-size: 13px;
+	}
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+.ql-toolbar + .ql-toolbar {
+	display: none;
+}
+
+[data-theme="light"] {
+	--background: #ffffff;
+	--text: #11181c;
+	//black
+	--black-10: #fafafa;
+	--black-20: #f4f4f5;
+	--black-30: #e4e4e7;
+	--black-40: #d4d4d8;
+	--black-50: #a1a1aa;
+	--black-60: #71717a;
+	--black-70: #52525b;
+	--black-80: #3f3f46;
+	--black-90: #27272a;
+	--black-100: #18181b;
+	//blue
+	--blue-10: #e6f1fe;
+	--blue-20: #cce3fd;
+	--blue-30: #99c7fb;
+	--blue-40: #d4d4d8;
+	--blue-50: #338ef7;
+	--blue-60: #0070f0;
+	--blue-70: #005bc4;
+	--blue-80: #004493;
+	--blue-90: #002e62;
+	--blue-100: #001731;
+	//green
+	--green-10: #e8faf0;
+	--green-20: #d1f4e0;
+	--green-30: #a2e9c1;
+	--green-40: #74dfa2;
+	--green-50: #45d483;
+	--green-60: #17c964;
+	--green-70: #12a150;
+	--green-80: #0e793c;
+	--green-90: #095028;
+	--green-100: #052814;
+	//red
+	--red-40: #eaa8a8;
+	--red-50: #e28080;
+	--red-60: #e56b6b;
+	--red-70: #e95555;
+	--red-80: #ec4040;
+	--red-90: #ef2b2b;
+	--red-100: #de1616;
+}
+
+[data-theme="dark"] {
+	--background: #11181c;
+	--text: #ffffff;
+	--black-100: #fafafa;
+	--black-90: #f4f4f5;
+	--black-80: #e4e4e7;
+	--black-70: #d4d4d8;
+	--black-60: #a1a1aa;
+	--black-50: #71717a;
+	--black-40: #52525b;
+	--black-30: #3f3f46;
+	--black-20: #27272a;
+	--black-10: #18181b;
+
+	//blue
+	--blue-100: #e6f1fe;
+	--blue-90: #cce3fd;
+	--blue-80: #99c7fb;
+	--blue-70: #d4d4d8;
+	--blue-60: #338ef7;
+	--blue-50: #006fee;
+	--blue-40: #005bc4;
+	--blue-30: #004493;
+	--blue-20: #002e62;
+	--blue-10: #001731;
+	//green
+	--green-100: #e8faf0;
+	--green-90: #d1f4e0;
+	--green-80: #a2e9c1;
+	--green-70: #74dfa2;
+	--green-60: #45d483;
+	--green-50: #17c964;
+	--green-40: #12a150;
+	--green-30: #0e793c;
+	--green-20: #095028;
+	--green-10: #052814;
+	//red
+	--red-100: #eaa8a8;
+	--red-90: #e28080;
+	--red-80: #e56b6b;
+	--red-70: #e95555;
+	--red-60: #ec4040;
+	--red-50: #ef2b2b;
+	--red-40: #de1616;
+}
+
+// .wmde-markdown-var {
+// 	background: inherit !important;
+// 	color: inherit !important;
+// }
+
+// w-md-editor w-md-editor-show-live

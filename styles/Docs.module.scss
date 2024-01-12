@@ -1,0 +1,71 @@
+@import "./varilable.scss";
+.docs-wrap {
+	display: flex;
+	width: 100%;
+	@include tablet {
+		flex-direction: column;
+		padding: 0;
+	}
+	.docs-content {
+		height: 200vh;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding: 0.8rem;
+
+		.tag-content {
+			width: 100%;
+			aspect-ratio: 16/4;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 50px;
+			position: relative;
+			overflow: hidden;
+			border-radius: 16px;
+			border: 3px solid var(--black-40);
+			@include tablet {
+				aspect-ratio: 16/5;
+			}
+			@include mobile {
+				aspect-ratio: 16/5;
+			}
+			.tag-name {
+				font-size: 4rem;
+				font-weight: 800;
+				text-transform: capitalize;
+				background-clip: text;
+				-webkit-background-clip: text;
+				display: inline-block;
+				background: linear-gradient(
+					to right,
+					#ff4e50,
+					#f9d423,
+					#5bbcd6,
+					#e44d26,
+					#33d9b2,
+					#dcc6e0
+				);
+				background-size: 500% 100%;
+				color: transparent;
+				background-clip: text;
+				-webkit-background-clip: text;
+				animation: gradient-animation 10s infinite;
+				@include tablet {
+					font-size: 3rem;
+				}
+				@include mobile {
+					font-size: 2.5rem;
+				}
+			}
+		}
+	}
+}
+@keyframes gradient-animation {
+	0% {
+		background-position: 100% 0%;
+	}
+	100% {
+		background-position: -100% 0%;
+	}
+}

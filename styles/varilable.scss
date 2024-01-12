@@ -1,0 +1,85 @@
+//black
+$black-60: #c8c8c8;
+$black-70: #4d4d4d;
+$black-80: #3c3c3c;
+$black-90: #1e1e1e;
+$black-100: #111111;
+$black-110: #000000;
+
+//white
+$white-110: #fff;
+$white-100: #fafafa;
+$white-90: #f2f2f2;
+$white-80: #e5e5e5;
+$white-70: #d8d8d8;
+$white-60: #cbcbcb;
+
+//blue
+
+$blue-110: #006ffe;
+$blue-100: #3382f7;
+$blue-90: #66aaf9;
+$blue-10: #def1ff;
+//red
+$red-110: #d2122e;
+$red-100: #e32636;
+$red-90: #f5a9a9;
+//green
+
+$green-100: #17c964;
+$green-50: #a2e9c1;
+
+$focus: #006fee;
+$error: #ef2b2b;
+@mixin tablet {
+	@media (max-width: 1025px) {
+		@content;
+	}
+}
+@mixin mobile {
+	@media (max-width: 757px) {
+		@content;
+	}
+}
+
+$header: 4.063rem;
+$m-header: 3.5rem;
+$snb-header: 3rem;
+@mixin Skeleton {
+	color: transparent;
+	background: linear-gradient(
+		90deg,
+		var(--black-30) 25%,
+		var(--black-40) 50%,
+		var(--black-30) 75%
+	);
+	background-size: 200% 100%;
+	animation: shimmer 2s infinite linear;
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: 200% 0;
+	}
+	100% {
+		background-position: -200% 0;
+	}
+}
+
+@font-face {
+	font-family: "GmarketSansMedium";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin font {
+	font-family: GmarketSansMedium;
+}
+
+@mixin flex($justify: center, $align-items: center) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align-items;
+}
