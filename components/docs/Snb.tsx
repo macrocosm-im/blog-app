@@ -3,7 +3,7 @@
 import classNames from "classnames/bind"
 import Style from '@/styles/Snb.module.scss'
 import Link from "next/link"
-import Button from "@/macrocosm/components/Button"
+import Button from "@/lib/components/Button"
 const cx = classNames.bind(Style)
 interface SubProps {
     tag?: string | string[] | undefined

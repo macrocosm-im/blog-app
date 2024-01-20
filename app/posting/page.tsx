@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
-const Editor = dynamic(() => import("@/macrocosm/components/useQuil"), {
+const Editor = dynamic(() => import("@/lib/components/useQuil"), {
     ssr: false,
 });
 const Posting = () => {

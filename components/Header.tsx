@@ -2,7 +2,7 @@
 import className from 'classnames/bind'
 import Style from '@/styles/Header.module.scss'
 import { useEffect, useState } from 'react'
-import Button from '@/macrocosm/components/Button'
+import Button from '@/lib/components/Button'
 
 
 const cx = className.bind(Style)
